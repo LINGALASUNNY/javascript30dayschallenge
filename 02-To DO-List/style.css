@@ -9,7 +9,7 @@
     margin-top:10vh;
 }
 .ToDo-List{
-    width:360px;
+    width:340px;
     background-color:rgba(46, 2, 77, 0.897);  
     border-radius:10px;
 }
@@ -31,7 +31,7 @@
     height:50px;
     position:absolute;
     margin-top:20px;
-    right:15px;
+    right:30px;
     border:1px solid black;
     border-radius:10px;
     background-color:white;
