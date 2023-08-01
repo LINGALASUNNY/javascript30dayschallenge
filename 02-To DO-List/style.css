@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:monospace;
+}
+.container{
+    display:flex;
+    justify-content:center;
+    margin-top:10vh;
+}
+.ToDo-List{
+    width:360px;
+    background-color:rgba(46, 2, 77, 0.897);  
+    border-radius:10px;
+}
+.input-box input{
+    width:90%;
+    height:50px;
+    position:relative;
+    outline:none;
+    border-radius:10px;
+    border:1px solid black;
+    padding-left:10px;
+    font-size:20px; 
+    background-color: rgba(46, 2, 77, 0.897);
+    color:white;
+    margin:20px 10px;
+}
+.input-box button{
+    width:60px;
+    height:50px;
+    position:absolute;
+    margin-top:20px;
+    right:15px;
+    border:1px solid black;
+    border-radius:10px;
+    background-color:white;
+    color:rgba(46, 1, 77, 0.897);
+    font-size:20px;
+}
+.listitem{
+   margin:20px 20px;
+}
+h4{
+    font-size:18px;
+    color:white;
+    margin:10px 20px;
+}
+.listitem li{
+    background-color:rgba(46, 1, 77, 0.897);
+    list-style-type:decimal;
+    position:relative;
+    font-size:25px;
+    margin-top:20px;
+    color:white;
+    border-radius:10px;
+    padding:10px 20px 10px 20px ;
+}
+.listitem li span{
+       position:absolute;
+       left:90%;
+       font-size:25px;
+       color:red;
+}
+.checked{
+    text-decoration:line-through;
+    text-decoration-color:rgba(79, 234, 18, 0.749);
+}
+@media(min-width:600px){
+     
+    .input-box button{
+        right:550px;
+    }
+
+}
+
