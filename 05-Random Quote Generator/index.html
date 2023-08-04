@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="quote-Box">
+            <h1>Quote of the Day</h1>
+            <blockquote id="quote">Loading....</blockquote>
+            <span>Loading...</span>
+            <div class="quote-buttons">
+                <button onclick=" getquote(api_url)">Quote Geneator</button>
+                <button onclick="tweet()">Tweet</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+       let quote=document.querySelector("blockquote");
+       let author=document.querySelector("span");
+
+
+       const api_url="https://type.fit/api/quotes";
+
+       async function getquote(url) {
+       const response=await fetch(url);
+       var data=await response.json();
+
+         quote.innerHTML=data[Math.floor(Math.random()*data.length)].text;
+         author.innerHTML=data[Math.floor(Math.random()*data.length)].author;
+        }
+        getquote(api_url);
+
+        function tweet(){
+            window.open("https://twitter.com/intent/tweet?text="+quote.innerHTML+"--- by "+author.innerHTML," Tweet window", "width=600,height=400");
+        }
+
+    </script>
+</body>
+</html>
