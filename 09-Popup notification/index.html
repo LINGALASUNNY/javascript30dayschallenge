@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Notification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button onclick="openPopup()">SUBMIT</button>
+        <div class="popup">
+            <p>This is pop message!</p>
+            <button onclick="closePopup()">okay</button>
+        </div>
+    </div>
+    
+    <script>
+        
+        let popup=document.querySelector(".popup");
+         
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+    </script>
+</body>
+</html>
