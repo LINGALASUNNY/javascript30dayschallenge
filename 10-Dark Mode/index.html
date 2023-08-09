@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="container">
+         <p>To see this website in <span id="page-mode">dark mode</span> click below</p>
+         <button id="btn">Dark Mode</button>
+     </div>
+
+     <script>
+        let pageMode=document.querySelector("#page-mode");
+        let button=document.querySelector("#btn");
+
+        btn.onclick=function (){
+            document.body.classList.toggle("dark-theme");
+               if(button.innerHTML=="Dark Mode"){
+                   button.innerHTML="light Mode";
+                   pageMode.innerHTML="light Mode";
+                }
+               else{
+                   button.innerHTML="Dark Mode";
+                   pageMode.innerHTML="Dark Mode";
+                }
+          }
+
+     </script>
+     
+</body>
+</html>
