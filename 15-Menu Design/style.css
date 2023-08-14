@@ -1,0 +1,51 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:monospace;
+}
+.container{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin-top:15vh;
+}
+.selectField{
+    width:300px;
+    display:flex;
+    justify-content:space-between;
+    padding:10px;
+    background:rgb(225, 216, 216);
+    transform:transition 0.5s;
+}
+.selectField p{
+    font-size:20px;
+}
+.optionField{
+    margin-top:20px;
+    border:1px solid rgb(225, 216, 216);
+    visibility:hidden;
+}
+.optionValue{
+      list-style-type:none;
+      display:flex;
+      align-items: center;
+      padding:10px;
+      border-bottom:1px solid rgb(225, 216, 216);
+}
+.optionValue img{
+    width:30px;
+}
+.optionValue p{
+  padding-left:20px;
+  font-size:20px;
+}
+.optionValue:hover{
+    background:rgb(225, 216, 216);
+}
+.optionDisplayer{
+    visibility:visible;
+    transition :0.5s;
+}
+.rotate-arrow{
+    transform:rotate(180deg);
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="Menu">
+            <div class="selectField">
+                <p id="selectText">Select social media</p>
+                <img src="images/arrow.png" alt="" width="20px" id="icon">
+            </div>
+            <div class="optionField">
+                <ul class="selectOption">
+                    <li class="optionValue">
+                        <img src="images/facebook.png" >
+                        <p>Facebook</p>
+                    </li>
+                    <li class="optionValue">
+                        <img src="images/instagram.png" >
+                        <p>Instagram</p>
+                    </li>
+                    <li class="optionValue">
+                        <img src="images/pinterest.png" >
+                        <p>Pintrest</p>
+                    </li>
+                    <li class="optionValue">
+                        <img src="images/twitter.png" >
+                        <p>Twitter</p>
+                    </li>
+                    <li class="optionValue">
+                        <img src="images/youtube.png" >
+                        <p>Youtube</p>
+                    </li>
+                    <li class="optionValue">
+                        <img src="images/whatsapp.png" >
+                        <p>whatsapp</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let slectText=document.getElementById("selectText");
+        let selectField=document.querySelector(".selectField");
+        let icon=document.querySelector("#icon");
+        let optionField=document.querySelector(".optionField");
+        let options=document.getElementsByClassName("optionValue");
+
+        // clicking on select field it shows option values 
+
+        selectField.onclick=function(){
+           
+            icon.classList.toggle("rotate-arrow");
+            optionField.classList.toggle("optionDisplayer");
+           
+        }
+    
+        //display selected option in select field
+
+       for(option of options){
+        option.onclick=function(){
+            selectText.innerHTML=this.textContent;
+            icon.classList.toggle("rotate-arrow");
+            optionField.classList.toggle("optionDisplayer");
+        }
+       }
+
+    </script>
+</body>
+</html>
