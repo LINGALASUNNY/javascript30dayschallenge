@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:monospace;
+}
+body{
+    background:rgb(40, 39, 39);
+    color:white;
+}
+.head{
+    width:90%;
+    max-width:500px;
+    margin:20px auto;
+    height:50px;
+    background:rgb(32, 31, 31);
+    border-radius:20px;
+}
+.head h2{
+    text-align:center;
+    padding:10px;
+}
+.container p{
+    font-size:18px;
+    width:90%;
+    max-width:500px;
+    height:200px;
+    border:1px solid white;
+    border-radius:10px;
+    margin:10px auto;
+    position:relative;
+    padding:10px;
+}
+.container img{
+    width:23px;
+    position:absolute;
+    right:15px;
+    bottom:15px;
+    background:white;
+    padding:5px;
+    border-radius:5px;
+}
+footer #add-icon{
+    position:fixed;
+    max-width:500px;
+    right:20px;
+    bottom:50px;
+    font-size:45px;
+}
