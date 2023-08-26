@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <div class="song-img">
+                <img src="Album-IMG.jpg" >
+            </div>
+            <div class="song-details">
+                <h3>Yenno Yenno</h3>
+                <i class="fa-regular fa-heart" ></i>
+            </div>
+            <input type="range" id="progressbar" value="0">
+            <div class="duration-time">
+                <p id="song-currenttime"></p>
+                <p id="song-duration"></p>
+            </div>
+            <div class="song-controls">
+                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-backward-step"></i>
+                <i class="fa-solid fa-play" id="playPauseBtn"></i>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-solid fa-repeat" ></i>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
